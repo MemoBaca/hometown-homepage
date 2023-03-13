@@ -1,0 +1,146 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    size: cover;
+    border-radius: 50%;
+}
+
+img:hover {
+  animation: shake 0.5s;
+
+  animation-iteration-count: infinite;
+}
+
+.hero-section{
+    background-image: url("images/costa-verde.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero-title {
+    background: #1D3557;
+    padding: 3px 12px 5px 12px;
+    border-radius: 5px;
+    margin: 120px auto 10px auto;
+    color: white;
+}
+
+#hero-text {
+    background: #457B9D;
+    padding: 5px 28px 8px 28px;
+    border-radius: 5px;
+    margin: 0px auto 120px auto;
+    color: white;
+    width: 450px;
+}
+
+#activities-title{
+    margin-top: 40px;
+    margin-bottom: 55px;
+    color: #1D3557;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 18px;
+  
+}
+
+.activities-section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-text{
+    color: #1D3557;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 23px;
+    margin-bottom: 17px;
+  
+}
+
+.decription-text{
+    width: 250px;
+    margin: 20px 25px;
+    color: #1D3557;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 17px;
+    
+}
+
+.guide-section{
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    margin: 10px auto;
+    background-color: #A8DADC;
+    padding: 23px 13px;
+    box-shadow: 0px 6px 0px #1D3557;
+    border-radius: 10px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+#guide-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+#guide-title{
+    font-size: 24px;
+    line-height: 28px;
+    color: #1D3557;
+}
+
+#guide-text{
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 18px;
+    color: #1D3557;
+}
+
+#guide-name{
+    font-size: 16px;
+    line-height: 18px;
+    color: #1D3557;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
